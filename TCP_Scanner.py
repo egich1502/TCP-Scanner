@@ -18,7 +18,7 @@ if __name__ == '__main__':
     a = []
     ip = input('Enter ip: ')
     start = int(input('Enter starting port: '))
-    end = int(input('Enter ending port: '))
+    end = int(input('Enter last port: '))
 
     for i in range(start, end + 1):
         thrd = threading.Thread(target=scan_port, args=(ip, i, a))
